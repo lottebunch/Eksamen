@@ -1,0 +1,137 @@
+/* Generalt*/
+h2, p {
+    color: black;
+}
+
+h1 {
+    font-family: serif;
+    font-weight: bold;
+    font-size: 1.7em;
+    margin-top: 0;
+    line-height: 1em;
+}
+
+h2 {
+    font-family: serif;
+}
+
+p {
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+
+/*start navigation*/
+
+/*php*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #999999;
+}
+
+li {
+    float: left;
+    text-align: center;
+}
+
+li a {
+    display: block;
+    width: 8em;
+    color: #ffffff;
+    padding: 0.5em 0.1em;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #cccccc;
+    color: #000000;
+}
+/* klargøring til grid */
+* {box-sizing: border-box;}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    padding: 0;
+}
+
+
+header,
+footer {
+    background: #999999;
+}
+
+header,
+section,
+footer {
+    padding: 2em;
+}
+
+/* styling af menuen */
+
+
+/*-----------------------------------
+GRID STARTER HER
+-------------------------------------
+*/
+header { grid-area: header;}
+#web { grid-area: s1;}
+#kommunikation {grid-area: s2;}
+#design {grid-area: s3;}
+#projekter {grid-area: s4;}
+#opgaver {grid-area: s5;}
+#portfolio {grid-area: s6;}
+footer {grid-area: footer;}
+/*-----------------------------------
+MOBILE VERSION
+-------------------------------------
+*/
+
+body {
+    display: grid;
+    grid-template-columns: 1em 1fr 1em;
+    grid-template-areas:
+    "header header header"
+    ". s1 ."
+    ". s2 ."
+    ". s3 ."
+    ". s4 ."
+    ". s5 ."
+    ". s6 ."
+    "footer footer footer"
+}
+
+/*
+--------------------------------------
+TABLET VERSION
+--------------------------------------
+*/
+
+@media only screen and (min-width:450px) {
+    body {
+        grid-template-columns: 1fr 400px 1fr;
+        
+
+    }
+}
+
+/*
+---------------------------------------
+DESKTOP VERSION
+---------------------------------------
+*/
+
+@media only screen and (min-width:1000px) {
+    body {
+        grid-template-columns: 1fr 400px 400px 1fr;
+        grid-template-areas:
+        "header header header header"
+        "s1 s1 s2 s2"
+        "s3 s3 s4 s4"
+        "s5 s5 s6 s6"
+        "footer footer footer footer"
+    }
+}
