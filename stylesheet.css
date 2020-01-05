@@ -74,19 +74,21 @@ footer {
 
 
 /*-----------------------------------
-GRID STARTER HER
+GRID STARTER HER 
 -------------------------------------
 */
 header { grid-area: header;}
-#web { grid-area: s1;}
-#kommunikation {grid-area: s2;}
-#design {grid-area: s3;}
-#projekter {grid-area: s4;}
-#opgaver {grid-area: s5;}
-#portfolio {grid-area: s6;}
+#Infoside { grid-area: s1;}
+#web { grid-area: s2;}
+#kommunikation {grid-area: s3;}
+#design {grid-area: s4;}
+#projekter {grid-area: s5;}
+#opgaver {grid-area: s6;}
+#portfolio {grid-area: s7;}
+#reflekt {grid-area: s8;}
 footer {grid-area: footer;}
 /*-----------------------------------
-MOBILE VERSION
+MOBILE VERSION 
 -------------------------------------
 */
 
@@ -101,12 +103,14 @@ body {
     ". s4 ."
     ". s5 ."
     ". s6 ."
+    ". s7 ."
+    ". s8 ."
     "footer footer footer"
 }
 
 /*
 --------------------------------------
-TABLET VERSION
+TABLET VERSION 
 --------------------------------------
 */
 
@@ -120,7 +124,7 @@ TABLET VERSION
 
 /*
 ---------------------------------------
-DESKTOP VERSION
+DESKTOP VERSION  
 ---------------------------------------
 */
 
@@ -132,6 +136,7 @@ DESKTOP VERSION
         "s1 s1 s2 s2"
         "s3 s3 s4 s4"
         "s5 s5 s6 s6"
+        "s7 s7 s8 s8"
         "footer footer footer footer"
     }
 }
