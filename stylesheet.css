@@ -20,8 +20,6 @@ p {
     font-weight: lighter;
 }
 
-/*start navigation*/
-
 /*php*/
 
 ul {
@@ -77,66 +75,19 @@ footer {
 GRID STARTER HER 
 -------------------------------------
 */
-header { grid-area: header;}
-#Infoside { grid-area: s1;}
-#web { grid-area: s2;}
-#kommunikation {grid-area: s3;}
-#design {grid-area: s4;}
-#projekter {grid-area: s5;}
-#opgaver {grid-area: s6;}
-#portfolio {grid-area: s7;}
-#reflekt {grid-area: s8;}
-footer {grid-area: footer;}
-/*-----------------------------------
-MOBILE VERSION 
--------------------------------------
-*/
-
 body {
-    display: grid;
-    grid-template-columns: 1em 1fr 1em;
-    grid-template-areas:
-    "header header header"
-    ". s1 ."
-    ". s2 ."
-    ". s3 ."
-    ". s4 ."
-    ". s5 ."
-    ". s6 ."
-    ". s7 ."
-    ". s8 ."
-    "footer footer footer"
+    font-family: sans-serif;
+    background-color: #ffffff;
+    margin: 1em;
 }
 
-/*
---------------------------------------
-TABLET VERSION 
---------------------------------------
-*/
-
-@media only screen and (min-width:450px) {
-    body {
-        grid-template-columns: 1fr 400px 1fr;
-        
-
-    }
+#mitgrid div {
+    font-size: 1em;
+    color: #000000;
+    text-align: center;
+    border-color: #000000;
+    border-width: 2px;
 }
 
-/*
----------------------------------------
-DESKTOP VERSION  
----------------------------------------
-*/
 
-@media only screen and (min-width:1000px) {
-    body {
-        grid-template-columns: 1fr 400px 400px 1fr;
-        grid-template-areas:
-        "header header header header"
-        "s1 s1 s2 s2"
-        "s3 s3 s4 s4"
-        "s5 s5 s6 s6"
-        "s7 s7 s8 s8"
-        "footer footer footer footer"
-    }
-}
+
