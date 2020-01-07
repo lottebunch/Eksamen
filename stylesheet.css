@@ -6,7 +6,7 @@ h2, p {
 h1 {
     font-family: serif;
     font-weight: bold;
-    font-size: 1.7em;
+    font-size: 2em;
     margin-top: 0;
     line-height: 1em;
 }
@@ -18,6 +18,10 @@ h2 {
 p {
     font-family: sans-serif;
     font-weight: lighter;
+}
+
+title {
+    font-family: serif;
 }
 
 /*php*/
@@ -86,7 +90,8 @@ body {
     color: #000000;
     text-align: center;
     border-color: #000000;
-    border-width: 2px;
+    border-width: 4px;
+    margin: 4px;
 }
 
 
